@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+            <div ng-app="test" ng-controller="testCtrl">
+                <input type="text" ng-model="text">
+                <h1>{{text}}</h1>
+            </div>
+    </body>
+    <script>
+        var application = angular.module('test',[]);
+        application.controller('testCtrl', function($scope){
+            $scope.text ="";
+        });
+    </script>
+</html>
